@@ -23,16 +23,14 @@ if(isset($_POST['order']))
 
 
 }
-$ilosc = $iloscf + $ilosck + $ilosch;
 $suma = $wynik1 + $wynik2 + $wynik3;
 
-if($suma >= 70){
-    echo 'Skorzystales z promocji 15% za zakup powyzej 100zl'.'<br>';
-    $procent = $suma * 0.1;
+
+if ($suma >=100){
+    echo 'Skorzystales z promocji 20% za zakup powyzej 100zl'.'<br>';
+    $procent = $suma * 0.20;
     $suma -=$procent;
-
 }
-
 
 
 echo "Do zaplaty: ".$suma.' zl';
