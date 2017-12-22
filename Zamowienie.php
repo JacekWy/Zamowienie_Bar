@@ -49,7 +49,7 @@ if(isset($_POST['order']))
         $procent = $suma * 0.20;
         $suma -=$procent;
     }
-    
+
     echo "Do zaplaty: ".$suma.' zl'.'<br>';
     echo 'Reszta z '.$reszta.' wynosi: '.$r.'zl';
 }
